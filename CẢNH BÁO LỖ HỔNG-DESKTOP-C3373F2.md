@@ -1,40 +1,3 @@
-**MỤC LỤC**
-[[#1. Tổng quan|1. Tổng quan]]
-	[[#1. Tổng quan#Mô tả:|Mô tả:]]
-	[[#1. Tổng quan#Đối tượng:|Đối tượng:]]
-[[#2. Lỗ hổng|2. Lỗ hổng]]
-	[[#2. Lỗ hổng#2.1. KoBe-01-001: Source code disclosure at https://upload.koinbase-53c1041dd203e.cyberjutsu-lab.tech/ due to misconfiguration [High]|2.1. KoBe-01-001: Source code disclosure at https://upload.koinbase-53c1041dd203e.cyberjutsu-lab.tech/ due to misconfiguration [High]]]
-		[[#2.1. KoBe-01-001: Source code disclosure at https://upload.koinbase-53c1041dd203e.cyberjutsu-lab.tech/ due to misconfiguration [High]#2.1.1. Description and Impact|2.1.1. Description and Impact]]
-		[[#2.1. KoBe-01-001: Source code disclosure at https://upload.koinbase-53c1041dd203e.cyberjutsu-lab.tech/ due to misconfiguration [High]#2.1.2. Root Cause Analysis|2.1.2. Root Cause Analysis]]
-		[[#2.1. KoBe-01-001: Source code disclosure at https://upload.koinbase-53c1041dd203e.cyberjutsu-lab.tech/ due to misconfiguration [High]#2.1.3. Steps to reproduce|2.1.3. Steps to reproduce]]
-		[[#2.1. KoBe-01-001: Source code disclosure at https://upload.koinbase-53c1041dd203e.cyberjutsu-lab.tech/ due to misconfiguration [High]#2.1.4. Recommendations|2.1.4. Recommendations]]
-		[[#2.1. KoBe-01-001: Source code disclosure at https://upload.koinbase-53c1041dd203e.cyberjutsu-lab.tech/ due to misconfiguration [High]#2.1.5. References|2.1.5. References]]
-	[[#2. Lỗ hổng#2.2. KoBe-01-002: File Upload through url image lead to Remote Code Execution [Critical]|2.2. KoBe-01-002: File Upload through url image lead to Remote Code Execution [Critical]]]
-		[[#2.2. KoBe-01-002: File Upload through url image lead to Remote Code Execution [Critical]#2.2.1. Description and Impact|2.2.1. Description and Impact]]
-		[[#2.2. KoBe-01-002: File Upload through url image lead to Remote Code Execution [Critical]#2.2.2. Root Cause Analysis|2.2.2. Root Cause Analysis]]
-		[[#2.2. KoBe-01-002: File Upload through url image lead to Remote Code Execution [Critical]#2.2.3. Steps to reproduce|2.2.3. Steps to reproduce]]
-		[[#2.2. KoBe-01-002: File Upload through url image lead to Remote Code Execution [Critical]#2.2.4. Recommendations|2.2.4. Recommendations]]
-		[[#2.2. KoBe-01-002: File Upload through url image lead to Remote Code Execution [Critical]#2.2.5. References|2.2.5. References]]
-	[[#2. Lỗ hổng#2.3. KoBe-01-003: XSS vulnerability leads to stealing other accounts' cookies [High]|2.3. KoBe-01-003: XSS vulnerability leads to stealing other accounts' cookies [High]]]
-		[[#2.3. KoBe-01-003: XSS vulnerability leads to stealing other accounts' cookies [High]#2.3.1. Description and Impact|2.3.1. Description and Impact]]
-		[[#2.3. KoBe-01-003: XSS vulnerability leads to stealing other accounts' cookies [High]#2.3.2. Root Cause Analysis|2.3.2. Root Cause Analysis]]
-		[[#2.3. KoBe-01-003: XSS vulnerability leads to stealing other accounts' cookies [High]#2.3.3. Steps to reproduce|2.3.3. Steps to reproduce]]
-		[[#2.3. KoBe-01-003: XSS vulnerability leads to stealing other accounts' cookies [High]#2.3.4. References|2.3.4. References]]
-	[[#2. Lỗ hổng#2.4. KoBe-01-004: Broken Access Control vulnerability in parameter during transfers between users [High]|2.4. KoBe-01-004: Broken Access Control vulnerability in parameter during transfers between users [High]]]
-		[[#2.4. KoBe-01-004: Broken Access Control vulnerability in parameter during transfers between users [High]#2.4.1. Description and Impact|2.4.1. Description and Impact]]
-		[[#2.4. KoBe-01-004: Broken Access Control vulnerability in parameter during transfers between users [High]#2.4.2. Root Cause Analysis|2.4.2. Root Cause Analysis]]
-		[[#2.4. KoBe-01-004: Broken Access Control vulnerability in parameter during transfers between users [High]#2.4.3. Steps to reproduce|2.4.3. Steps to reproduce]]
-		[[#2.4. KoBe-01-004: Broken Access Control vulnerability in parameter during transfers between users [High]#2.4.5. Recommendations|2.4.5. Recommendations]]
-		[[#2.4. KoBe-01-004: Broken Access Control vulnerability in parameter during transfers between users [High]#2.4.6. References|2.4.6. References]]
-	[[#2. Lỗ hổng#2.5. KoBe-01-005: Union-based SQL injection at `/view.php` on https://koinbase-53c1041dd203e.cyberjutsu-lab.tech/ via `id` parameter [High]|2.5. KoBe-01-005: Union-based SQL injection at `/view.php` on https://koinbase-53c1041dd203e.cyberjutsu-lab.tech/ via `id` parameter [High]]]
-		[[#2.5. KoBe-01-005: Union-based SQL injection at `/view.php` on https://koinbase-53c1041dd203e.cyberjutsu-lab.tech/ via `id` parameter [High]#2.5.1. Description and Impact|2.5.1. Description and Impact]]
-		[[#2.5. KoBe-01-005: Union-based SQL injection at `/view.php` on https://koinbase-53c1041dd203e.cyberjutsu-lab.tech/ via `id` parameter [High]#2.5.2. Root Cause Analysis|2.5.2. Root Cause Analysis]]
-		[[#2.5. KoBe-01-005: Union-based SQL injection at `/view.php` on https://koinbase-53c1041dd203e.cyberjutsu-lab.tech/ via `id` parameter [High]#2.5.3. Steps to reproduce|2.5.3. Steps to reproduce]]
-			[[#2.5.3. Steps to reproduce#Scenario 1: Đọc table Flag trong Database để lấy Flag5|Scenario 1: Đọc table Flag trong Database để lấy Flag5]]
-			[[#2.5.3. Steps to reproduce#Scenario 2: Đọc Credit Card của user **Crush** để lấy Flag3|Scenario 2: Đọc Credit Card của user **Crush** để lấy Flag3]]
-		[[#2.5. KoBe-01-005: Union-based SQL injection at `/view.php` on https://koinbase-53c1041dd203e.cyberjutsu-lab.tech/ via `id` parameter [High]#2.5.4. Recommendations|2.5.4. Recommendations]]
-		[[#2.5. KoBe-01-005: Union-based SQL injection at `/view.php` on https://koinbase-53c1041dd203e.cyberjutsu-lab.tech/ via `id` parameter [High]#2.5.5. References|2.5.5. References]]
-
 # 1. Tổng quan
 ## Mô tả:
 - Báo cáo nay mô tả chi tiết quá trình và kết quả kiểm thử ứng dụng KoinBase vào ngày 06, 07 tháng 05 năm 2023.
@@ -258,3 +221,4 @@ echo $b;
 - Không cộng chuỗi để tạo câu lệnh SQL
 ### 2.5.5. References
 - [What is SQL Injection? Tutorial & Examples | Web Security Academy (portswigger.net)](https://portswigger.net/web-security/sql-injection#:~:text=SQL%20injection%20(SQLi)%20is%20a,not%20normally%20able%20to%20retrieve.)
+
